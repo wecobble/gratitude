@@ -26,9 +26,8 @@ class NOSActions extends React.Component {
   render() {
     const { classes, nos } = this.props;
 
-    const neo = "c56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b";
     const gas = "602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7";
-    const rpx = "ecc6b20d3ccac1ee9ef109af5a7cdb85706b1df9";
+
 
     // Add your smart contract's scriptHash here
     const scriptHash = "";
@@ -52,52 +51,19 @@ class NOSActions extends React.Component {
 
     return (
       <React.Fragment>
-        <button className={classes.button} onClick={() => this.handleAlert(nos.getAddress())}>
+        <button className="" onClick={() => this.handleAlert(nos.getAddress())}>
           Get Address
         </button>
-        <button
-          className={classes.button}
-          onClick={() => this.handleAlert(nos.getBalance({ asset: neo }))}
-        >
-          Get NEO Balance
-        </button>
-        <button
-          className={classes.button}
-          onClick={() => this.handleAlert(nos.getBalance({ asset: gas }))}
-        >
-          Get GAS Balance
-        </button>
-        <button
-          className={classes.button}
-          onClick={() => this.handleAlert(nos.getBalance({ asset: rpx }))}
-        >
-          Get RPX Balance
+
+        <button className="" onClick={() => this.handleAlert(nos.getBalance({ asset: gas }))}>
+          GAS Balance
         </button>
 
-        <button className={classes.button} onClick={this.handleClaimGas}>
-          Claim Gas
-        </button>
-        <button className={classes.button} onClick={() => this.handleAlert(nos.send(send))}>
-          Send GAS to...
+        <button className="" onClick={() => this.handleAlert(nos.send(send))}>
+          Send GAS
         </button>
 
-        <button className={classes.button} onClick={() => this.handleAlert(nos.testInvoke(invoke))}>
-          TestInvoke
-        </button>
-        {/*
-          <button
-            className={classes.button}
-            onClick={() => this.handleAlert(nos.invoke(invoke))}
-          >
-            Invoke
-          </button>
-        */}
-        <button
-          className={classes.button}
-          onClick={() => this.handleAlert(nos.getStorage(getStorage))}
-        >
-          GetStorage
-        </button>
+
       </React.Fragment>
     );
   }
