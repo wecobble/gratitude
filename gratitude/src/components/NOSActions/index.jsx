@@ -28,7 +28,6 @@ class NOSActions extends React.Component {
 
     const gas = "602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7";
 
-
     // Add your smart contract's scriptHash here
     const scriptHash = "";
 
@@ -62,8 +61,6 @@ class NOSActions extends React.Component {
         <button className="" onClick={() => this.handleAlert(nos.send(send))}>
           Send GAS
         </button>
-
-
       </React.Fragment>
     );
   }
