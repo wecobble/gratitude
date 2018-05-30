@@ -1,13 +1,6 @@
 import React from "react";
-import injectSheet from "react-jss";
-import PropTypes from "prop-types";
-
 import NOSActions from "./../../components/NOSActions";
 import "./../../assets/app.css";
-
-const styles = {
-  "@import": "https://fonts.googleapis.com/css?family=Nunito:400,600,700|Roboto:300,400,500,700"
-};
 
 const App = () => (
   <div>
