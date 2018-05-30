@@ -92,9 +92,9 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@cityofzion/neon-js@3.8.0":
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/@cityofzion/neon-js/-/neon-js-3.8.0.tgz#2cffe4785aff99e889865a68faa1bb2416a22c82"
+"@cityofzion/neon-js@^3.8.0":
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/@cityofzion/neon-js/-/neon-js-3.8.1.tgz#f49892542d74e17de3713aea4089fd1e89b7a475"
   dependencies:
     axios "^0.18.0"
     bignumber.js "5.0.0"
@@ -110,7 +110,7 @@
     semver "^5.5.0"
     wif "^2.0.6"
 
-"@nosplatform/api-functions@0.2.2":
+"@nosplatform/api-functions@^0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@nosplatform/api-functions/-/api-functions-0.2.2.tgz#f8a1ceee64633ee4bed28dd5b866620292b00ab5"
   dependencies:
@@ -909,7 +909,7 @@ babel-plugin-transform-strict-mode@^6.24.1:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
 
-babel-polyfill@6.26.0, babel-polyfill@^6.26.0:
+babel-polyfill@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
   dependencies:
@@ -2281,7 +2281,7 @@ eslint-plugin-jsx-a11y@6.0.3:
     emoji-regex "^6.1.0"
     jsx-ast-utils "^2.0.0"
 
-eslint-plugin-prettier@2.6.0:
+eslint-plugin-prettier@^2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-2.6.0.tgz#33e4e228bdb06142d03c560ce04ec23f6c767dd7"
   dependencies:
@@ -3920,7 +3920,7 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
-jss-camel-case@6.1.0, jss-camel-case@^6.1.0:
+jss-camel-case@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/jss-camel-case/-/jss-camel-case-6.1.0.tgz#ccb1ff8d6c701c02a1fed6fb6fb6b7896e11ce44"
   dependencies:
@@ -3946,7 +3946,7 @@ jss-extend@^6.2.0:
   dependencies:
     warning "^3.0.0"
 
-jss-global@3.0.0, jss-global@^3.0.0:
+jss-global@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/jss-global/-/jss-global-3.0.0.tgz#e19e5c91ab2b96353c227e30aa2cbd938cdaafa2"
 
@@ -3981,19 +3981,19 @@ jss-template@^1.0.1:
   dependencies:
     warning "^3.0.0"
 
-jss-vendor-prefixer@8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/jss-vendor-prefixer/-/jss-vendor-prefixer-8.0.0.tgz#5ce6275bf63c1af2a0b7164c3ecdb68dd7bb1d22"
-  dependencies:
-    css-vendor "^1.0.0"
-
 jss-vendor-prefixer@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/jss-vendor-prefixer/-/jss-vendor-prefixer-7.0.0.tgz#0166729650015ef19d9f02437c73667231605c71"
   dependencies:
     css-vendor "^0.3.8"
 
-jss@9.8.1, jss@^9.7.0:
+jss-vendor-prefixer@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/jss-vendor-prefixer/-/jss-vendor-prefixer-8.0.0.tgz#5ce6275bf63c1af2a0b7164c3ecdb68dd7bb1d22"
+  dependencies:
+    css-vendor "^1.0.0"
+
+jss@^9.7.0, jss@^9.8.1:
   version "9.8.1"
   resolved "https://registry.yarnpkg.com/jss/-/jss-9.8.1.tgz#e2ff250777ad657430e6edc47a63516541b888fa"
   dependencies:
@@ -5194,7 +5194,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@15.6.1, prop-types@^15.5.8, prop-types@^15.6.0:
+prop-types@15.6.1, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
@@ -5317,9 +5317,9 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@16.3.1:
-  version "16.3.1"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.3.1.tgz#6a3c90a4fb62f915bdbcf6204422d93a7d4ca573"
+react-dom@^16.3.1:
+  version "16.4.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.0.tgz#099f067dd5827ce36a29eaf9a6cdc7cbf6216b1e"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
@@ -5330,7 +5330,7 @@ react-is@^16.3.1:
   version "16.3.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.3.1.tgz#ee66e6d8283224a83b3030e110056798488359ba"
 
-react-jss@8.4.0:
+react-jss@^8.4.0:
   version "8.4.0"
   resolved "https://registry.yarnpkg.com/react-jss/-/react-jss-8.4.0.tgz#7cb43d85dea56afafc8f0fd072ae27fcc0518950"
   dependencies:
@@ -5366,9 +5366,9 @@ react-test-renderer@^16.0.0-0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react@16.3.1:
-  version "16.3.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.3.1.tgz#4a2da433d471251c69b6033ada30e2ed1202cfd8"
+react@^16.4.0:
+  version "16.4.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.4.0.tgz#402c2db83335336fba1962c08b98c6272617d585"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
