@@ -7,6 +7,7 @@
 @import "~bootstrap/scss/type";
 @import "~bootstrap/scss/images";
 @import "~bootstrap/scss/code";
+@import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/grid";
 
 // importing font-awesome
@@ -14,3 +15,6 @@
 @import './../fontawesome/scss/fa-solid';
 @import './../fontawesome/scss/fa-brands';
 @import './../fontawesome/scss/fontawesome.scss';
+
+// Base Style
+@import 'style.scss';
