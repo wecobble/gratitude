@@ -8110,6 +8110,8 @@ a:hover {
   padding: 8px 30px;
   border-radius: 25px;
   font-family: "Nunito", sans-serif;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.21);
 }
 
 .btn-common:hover {
@@ -8134,7 +8136,7 @@ a:hover {
 }
 
 .hero-section {
-  height: 400px;
+  height: 645px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8158,6 +8160,15 @@ a:hover {
   margin-top: 10px;
 }
 
+.hero-section .hero-image {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.hero-section .hero-image img {
+  width: 100%;
+}
+
 @media (min-width: 992px) {
   .header-section {
     padding: 30px 0;
@@ -8171,6 +8182,9 @@ a:hover {
   }
   .hero-section .hero-text h1 {
     font-size: 42px;
+  }
+  .hero-section .hero-text .btn-common {
+    margin-top: 25px;
   }
   .btn-common {
     font-weight: 600;

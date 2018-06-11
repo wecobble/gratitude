@@ -3,7 +3,7 @@
 
 
 .hero-section {
-    height: 400px;
+    height: 645px;
     position: relative;
     display: flex;
     align-items:  center;
@@ -17,5 +17,12 @@
     }
     .hero-text .btn-common {
         margin-top: 10px;
+    }
+    .hero-image {
+        text-align: center;
+        margin-top: 25px;
+        img {
+            width: 100%;
+        }
     }
 }
