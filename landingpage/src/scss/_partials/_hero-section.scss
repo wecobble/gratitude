@@ -1,0 +1,21 @@
+// Hero section styles
+
+
+
+.hero-section {
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items:  center;
+    .hero-text h1 {
+        font-size: 26px;
+        line-height: 1.5;
+        color: $light-text-color;
+        span {
+            color: $dark-text-color;
+        }
+    }
+    .hero-text .btn-common {
+        margin-top: 10px;
+    }
+}

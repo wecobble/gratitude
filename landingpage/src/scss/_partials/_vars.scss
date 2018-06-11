@@ -5,6 +5,7 @@ $console-font: 'Inconsolata', monospace;
 
 // Colors
 $link-color: #64D360;
+$link-color-dark: darken($link-color , 10%);
 $primary-color: #44E6A2;
 $secondary-color: #52C3FF;
 $light-text-color: #5C5858;

@@ -1,3 +1,13 @@
 // Global Styles
 @import '_partials/vars';
 @import '_partials/global';
+// Header section
+@import '_partials/header';
+// Hero section
+@import '_partials/hero-section';
+
+
+
+// Responsive Style Starts Here
+@import '_partials/desktop';
+@import '_partials/tablet';

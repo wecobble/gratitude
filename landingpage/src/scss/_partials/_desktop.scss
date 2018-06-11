@@ -1,0 +1,35 @@
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .header-section {
+        padding: 30px 0;
+    }
+    .header-section .logo a h2 {
+        font-size: 32px;
+    }
+    .hero-section {
+        height: 100vh;
+        position: relative;
+        // background-image: url(../images/hero-bg1.png);
+    }
+    .hero-section .hero-text h1 {
+        font-size: 42px;
+    }
+    .btn-common {
+        font-weight: 600;
+        padding: 14px 40px;
+
+        border-radius: 30px;
+    }
+    .hero-section::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100vh;
+        top: -300px;
+        right: 0;
+        left: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../images/hero-bg.png);
+    }
+}

@@ -20,7 +20,26 @@ h1 , h2 ,h3, h4, h5, h6 {
 a {
     text-decoration: none;
     color: $link-color;
+    transition: all 0.3s ease;
     &:hover {
         text-decoration: none;
+        color: $link-color-dark;
     }
+}
+
+// Button Style
+.btn-common {
+    color: #fff;
+    background: $link-color;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 8px 30px;
+    border-radius: 25px;
+    font-family: $heading-font;
+    &:hover {
+        background-color: $link-color-dark;
+        color: #fff;
+    }
+
 }

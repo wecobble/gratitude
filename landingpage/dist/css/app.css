@@ -8092,8 +8092,101 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: #64D360;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 a:hover {
   text-decoration: none;
+  color: #3dc838;
+}
+
+.btn-common {
+  color: #fff;
+  background: #64D360;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 8px 30px;
+  border-radius: 25px;
+  font-family: "Nunito", sans-serif;
+}
+
+.btn-common:hover {
+  background-color: #3dc838;
+  color: #fff;
+}
+
+.header-section {
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+  padding: 20px 0;
+}
+
+.header-section .logo a {
+  display: inline-block;
+}
+
+.header-section .logo a h2 {
+  color: #464242;
+  font-size: 22px;
+}
+
+.hero-section {
+  height: 400px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-section .hero-text h1 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: #5C5858;
+}
+
+.hero-section .hero-text h1 span {
+  color: #464242;
+}
+
+.hero-section .hero-text .btn-common {
+  margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+  .header-section {
+    padding: 30px 0;
+  }
+  .header-section .logo a h2 {
+    font-size: 32px;
+  }
+  .hero-section {
+    height: 100vh;
+    position: relative;
+  }
+  .hero-section .hero-text h1 {
+    font-size: 42px;
+  }
+  .btn-common {
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 30px;
+  }
+  .hero-section::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    top: -300px;
+    right: 0;
+    left: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/hero-bg.png);
+  }
 }

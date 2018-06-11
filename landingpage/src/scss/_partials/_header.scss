@@ -1,0 +1,17 @@
+// Header Section Styles
+.header-section {
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    padding: 20px 0;
+    // Logo
+    .logo {
+        a {
+            display: inline-block;
+           h2 {
+                color: $dark-text-color;
+                font-size: 22px;
+           }
+        }
+    }
+}
