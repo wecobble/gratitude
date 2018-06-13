@@ -8119,6 +8119,10 @@ a:hover {
   color: #fff;
 }
 
+.dark-section-bg {
+  background-color: #FAFAFA;
+}
+
 .section-padding {
   padding: 80px 0;
 }
@@ -8211,6 +8215,7 @@ a:hover {
 .app-screenshot-wrapper {
   margin-top: 50px;
   position: relative;
+  z-index: 2;
 }
 
 .app-screenshot-wrapper::before {
@@ -8242,6 +8247,7 @@ a:hover {
 
 .app-screenshot-wrapper img {
   width: 100%;
+  z-index: 2;
 }
 
 @media (min-width: 992px) {
