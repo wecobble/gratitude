@@ -8119,6 +8119,15 @@ a:hover {
   color: #fff;
 }
 
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-title h2 {
+  text-align: center;
+  font-size: 26px;
+}
+
 .header-section {
   position: absolute;
   width: 100%;
@@ -8144,6 +8153,13 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #53E3D8;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#53E3D8), to(#4AA0B5));
+  background: linear-gradient(to bottom, #53E3D8, #4AA0B5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0 0 150px 150px;
 }
 
 .hero-section .hero-text h1 {
@@ -8169,6 +8185,65 @@ a:hover {
   width: 100%;
 }
 
+.about-us-wrapper {
+  margin-top: 50px;
+}
+
+.single-about-widget {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.single-about-widget img {
+  width: 80px;
+}
+
+.single-about-widget h3 {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #464242;
+}
+
+.single-about-widget p {
+  color: #5C5858;
+}
+
+.app-screenshot-wrapper {
+  margin-top: 50px;
+  position: relative;
+}
+
+.app-screenshot-wrapper::before {
+  position: absolute;
+  content: "";
+  top: -30px;
+  left: -22px;
+  z-index: -1;
+  width: 80px;
+  height: 80px;
+  background-color: #52C3FF;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+
+.app-screenshot-wrapper::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 50px;
+  height: 50px;
+  background-color: #44E6A2;
+  opacity: 0.2;
+  border-radius: 50%;
+  left: auto;
+  right: -10px;
+  bottom: -10px;
+}
+
+.app-screenshot-wrapper img {
+  width: 100%;
+}
+
 @media (min-width: 992px) {
   .header-section {
     padding: 30px 0;
@@ -8179,9 +8254,14 @@ a:hover {
   .hero-section {
     height: 100vh;
     position: relative;
+    border-radius: 0;
+    background: #fff;
+    overflow: hidden;
   }
   .hero-section .hero-text h1 {
-    font-size: 42px;
+    font-size: 46px;
+    line-height: 1.4;
+    font-weight: 700;
   }
   .hero-section .hero-text .btn-common {
     margin-top: 25px;
@@ -8203,5 +8283,35 @@ a:hover {
     background-repeat: no-repeat;
     background-image: url(../images/hero-bg.png);
     background-position: right;
+  }
+  .section-padding {
+    padding: 120px 0;
+  }
+  .section-title h2 {
+    font-size: 44px;
+  }
+  .about-us-wrapper {
+    margin-top: 80px;
+  }
+  .single-about-widget img {
+    width: 100px;
+  }
+  .single-about-widget h3 {
+    font-size: 20px;
+  }
+  .app-screenshot-wrapper {
+    margin-top: 80px;
+  }
+  .app-screenshot-wrapper::before {
+    top: -70px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+  }
+  .app-screenshot-wrapper::after {
+    width: 150px;
+    height: 150px;
+    right: -30px;
+    bottom: -18px;
   }
 }

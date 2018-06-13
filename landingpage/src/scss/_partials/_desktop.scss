@@ -9,10 +9,14 @@
     .hero-section {
         height: 100vh;
         position: relative;
-        // background-image: url(../images/hero-bg1.png);
+        border-radius: 0;
+        background: #fff;
+        overflow: hidden;
     }
     .hero-section .hero-text h1 {
-        font-size: 42px;
+        font-size: 46px;
+        line-height: 1.4;
+        font-weight: 700;
     }
     .hero-section .hero-text .btn-common {
         margin-top: 25px;
@@ -35,5 +39,37 @@
         background-repeat: no-repeat;
         background-image: url(../images/hero-bg.png);
         background-position: right;
+    }
+    .section-padding {
+        padding: 120px 0;
+    }
+    .section-title {
+        h2 {
+            font-size: 44px;
+        }
+    }
+    .about-us-wrapper {
+        margin-top: 80px;
+    }
+    .single-about-widget img {
+        width: 100px;
+    }
+    .single-about-widget h3 {
+        font-size: 20px;
+    }
+    .app-screenshot-wrapper {
+        margin-top: 80px;
+    }
+    .app-screenshot-wrapper::before {
+        top: -70px;
+        left: -50px;
+        width: 200px;
+        height: 200px;
+    }
+    .app-screenshot-wrapper::after {
+        width: 150px;
+        height: 150px;
+        right: -30px;
+        bottom: -18px;
     }
 }

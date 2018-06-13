@@ -1,0 +1,55 @@
+// About section styles
+.single-about-widget {
+
+}
+.about-us-wrapper {
+    margin-top: 50px;
+}
+.single-about-widget {
+    text-align: center;
+    margin-bottom: 50px;
+    img {
+        width: 80px;
+    }
+    h3 {
+        font-size: 18px;
+        margin-top: 20px;
+        color: $dark-text-color;
+    }
+    p {
+        color: $light-text-color;
+    }
+}
+.app-screenshot-wrapper {
+    margin-top: 50px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        top: -30px;
+        left: -22px;
+        z-index: -1;
+        width: 80px;
+        height: 80px;
+        background-color: $secondary-color;
+        opacity: 0.2;
+        border-radius: 50%;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 50px;
+        height: 50px;
+        background-color: $primary-color;
+        opacity: 0.2;
+        border-radius: 50%;
+        left: auto;
+        right: -10px;
+        bottom: -10px;
+    }
+    img {
+        width: 100%;
+    }
+    
+}
