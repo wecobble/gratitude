@@ -1,31 +1,34 @@
 import React from "react";
-import injectSheet from "react-jss";
 import PropTypes from "prop-types";
 
-import SpinningLogo from "./../SpinningLogo";
+class Header extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+        <header className="header-section">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-md-3 col-6">
+                <div className="logo">
+                  <a href="https://nos.io/">Gratitude</a>
+                </div>
+              </div>
 
-const styles = {
-  header: {
-    backgroundColor: "#f0f0f0",
-    color: "#333333",
-    padding: "24px",
-    marginBottom: "32px"
-  },
-  title: {
-    fontSize: "1.5em"
+              <div className="col-md-9 col-6 text-right">
+                <div className="quick-link">
+                  <a href="https://nos.io/">Privacy Policy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </React.Fragment>
+    );
   }
-};
-
-const Header = ({ classes, title }) => (
-  <header className={classes.header}>
-    <h1 className={classes.title}>{title}</h1>
-    <SpinningLogo />
-  </header>
-);
+}
 
 Header.propTypes = {
-  classes: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired
 };
 
-export default injectSheet(styles)(Header);
+export default Header;
