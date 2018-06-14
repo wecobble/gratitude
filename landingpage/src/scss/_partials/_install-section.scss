@@ -1,0 +1,44 @@
+// Install section styles
+.instruction-wrapper {
+    margin-top: 50px;
+}
+
+.single-instruction {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+    &:last-child {
+        border-bottom: 0px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+// text
+.instruction-text {
+    margin-bottom: 20px;
+    p {
+        color: $light-text-color;
+        margin-bottom: 0;
+        span {
+            font-weight: 500;
+            color: $dark-text-color;
+        }
+    }
+}
+
+// commands
+.command-line {
+    pre {
+        background: $dark-text-color;
+        color: #fff;
+        display: flex;
+        padding: 10px 25px;
+        border-radius: 5px;
+        text-align: left;
+        code {
+            span {
+                color: $primary-color;
+            }
+        }
+    }
+}
