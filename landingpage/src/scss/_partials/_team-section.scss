@@ -1,0 +1,77 @@
+.team-wrapper {
+    margin-top: 50px;
+}
+
+.single-member {
+    padding: 25px;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    -webkit-box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.22);
+-moz-box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.22);
+box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.22);
+}
+
+.single-member .image {
+    text-align: center;
+    
+}
+
+.single-member .image img {
+    width: 130px;
+    border: 2px solid #fafafa;
+    border-radius: 50%;
+}
+
+.single-member .details {
+    margin-top: 20px;
+}
+
+.single-member .details .name {
+    font-size: 20px;
+    color: $dark-text-color;
+    text-transform: capitalize;
+}
+
+.single-member .details .role {
+    font-weight: 600;
+    font-size: 16px;
+    color: $secondary-color;
+    text-transform: capitalize;
+}
+
+.single-member .social i {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background: $dark-text-color;
+    color: #fff;
+    line-height: 35px;
+    margin-right: 5px;
+    font-size: 20px;
+    &:hover {
+        background-color: $light-text-color;
+    }
+}
+
+.single-member .social {
+    margin-top: 20px;
+}
+.github-widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 25px;
+    .follow {
+        text-align: center;
+        h2 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}

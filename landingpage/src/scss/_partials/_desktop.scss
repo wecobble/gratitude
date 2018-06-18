@@ -79,4 +79,32 @@
         margin-bottom: 70px;
         padding-bottom: 50px;
     }
+
+    .single-member {
+        padding: 30px 50px;
+        margin-bottom: 50px;
+        height: 470px;
+    }
+    .single-member .social i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .team-wrapper {
+        margin-top: 80px;
+    }
+    .single-member .details .name {
+        font-size: 24px;
+    }
+    .single-member .image img {
+        width: 150px;
+    }
+    .github-widget {
+        .follow {
+            
+            h2 {
+                font-size: 28px;
+            }
+        }
+    }
 }

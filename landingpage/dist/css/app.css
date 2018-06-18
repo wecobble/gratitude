@@ -8300,6 +8300,93 @@ a:hover {
   color: #44E6A2;
 }
 
+.team-wrapper {
+  margin-top: 50px;
+}
+
+.single-member {
+  padding: 25px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.22);
+}
+
+.single-member .image {
+  text-align: center;
+}
+
+.single-member .image img {
+  width: 130px;
+  border: 2px solid #fafafa;
+  border-radius: 50%;
+}
+
+.single-member .details {
+  margin-top: 20px;
+}
+
+.single-member .details .name {
+  font-size: 20px;
+  color: #464242;
+  text-transform: capitalize;
+}
+
+.single-member .details .role {
+  font-weight: 600;
+  font-size: 16px;
+  color: #52C3FF;
+  text-transform: capitalize;
+}
+
+.single-member .social i {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  background: #464242;
+  color: #fff;
+  line-height: 35px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.single-member .social i:hover {
+  background-color: #5C5858;
+}
+
+.single-member .social {
+  margin-top: 20px;
+}
+
+.github-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 40px 25px;
+}
+
+.github-widget .follow {
+  text-align: center;
+}
+
+.github-widget .follow h2 {
+  font-size: 28px;
+}
+
+.github-widget .follow p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 @media (min-width: 992px) {
   .header-section {
     padding: 30px 0;
@@ -8376,5 +8463,27 @@ a:hover {
   .single-instruction {
     margin-bottom: 70px;
     padding-bottom: 50px;
+  }
+  .single-member {
+    padding: 30px 50px;
+    margin-bottom: 50px;
+    height: 470px;
+  }
+  .single-member .social i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .team-wrapper {
+    margin-top: 80px;
+  }
+  .single-member .details .name {
+    font-size: 24px;
+  }
+  .single-member .image img {
+    width: 150px;
+  }
+  .github-widget .follow h2 {
+    font-size: 28px;
   }
 }
