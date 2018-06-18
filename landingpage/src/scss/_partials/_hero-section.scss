@@ -3,15 +3,14 @@
 
 
 .hero-section {
-    height: 645px;
     position: relative;
     display: flex;
     align-items:  center;
-    background: #53E3D8;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #53E3D8, #4AA0B5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #53E3D8, #4AA0B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 0 0 150px 150px;
-
+    height: 645px;
+            background: #53E3D8;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #53E3D8, #4AA0B5);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #53E3D8, #4AA0B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border-radius: 0 0 150px 150px;
     .hero-text h1 {
         font-size: 26px;
         line-height: 1.5;
@@ -29,5 +28,14 @@
         img {
             width: 100%;
         }
+    }
+}
+@media (max-width: 575.98px) {
+    .hero-section {
+        height: 645px;
+        background: #53E3D8;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #53E3D8, #4AA0B5);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #53E3D8, #4AA0B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border-radius: 0 0 150px 150px;
     }
 }

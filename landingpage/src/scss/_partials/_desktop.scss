@@ -115,3 +115,29 @@
         }
     }
 }
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .hero-section .hero-text h1 {
+        font-size: 36px;
+    }
+    .hero-section::before {
+        width: 900px;
+        top: -355px;
+    }
+    .hero-section {
+        overflow: hidden;
+    }
+    .single-member .details .name {
+        font-size: 18px;
+    }
+    .single-member .details .role {
+        font-size: 14px;
+    }
+    .single-member .image img {
+        width: 140px;
+    }
+    .github-widget .follow h2 {
+        font-size: 24px;
+    }
+}

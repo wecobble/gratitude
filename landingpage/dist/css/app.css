@@ -8154,7 +8154,6 @@ a:hover {
 }
 
 .hero-section {
-  height: 645px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8162,6 +8161,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 645px;
   background: #53E3D8;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
@@ -8192,6 +8192,19 @@ a:hover {
 
 .hero-section .hero-image img {
   width: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .hero-section {
+    height: 645px;
+    background: #53E3D8;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, left bottom, from(#53E3D8), to(#4AA0B5));
+    background: linear-gradient(to bottom, #53E3D8, #4AA0B5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 0 0 150px 150px;
+  }
 }
 
 .about-us-wrapper {
@@ -8376,6 +8389,7 @@ a:hover {
 
 .github-widget .follow {
   text-align: center;
+  width: 100%;
 }
 
 .github-widget .follow h2 {
@@ -8507,5 +8521,133 @@ a:hover {
   }
   .footer-section .footer-text p {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .hero-section .hero-text h1 {
+    font-size: 36px;
+  }
+  .hero-section::before {
+    width: 900px;
+    top: -355px;
+  }
+  .hero-section {
+    overflow: hidden;
+  }
+  .single-member .details .name {
+    font-size: 18px;
+  }
+  .single-member .details .role {
+    font-size: 14px;
+  }
+  .single-member .image img {
+    width: 140px;
+  }
+  .github-widget .follow h2 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-section {
+    height: 500px;
+    overflow: hidden;
+    background: none;
+  }
+  .hero-section::before {
+    position: absolute;
+    content: "";
+    width: 800px;
+    height: 900px;
+    top: -330px;
+    right: -300px;
+    left: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/hero-bg.png);
+    background-position: right;
+  }
+  .hero-section .hero-text h1 {
+    font-size: 28px;
+  }
+  .single-about-widget h3 {
+    font-size: 16px;
+  }
+  .single-about-widget p {
+    font-size: 12px;
+  }
+  .app-screenshot-wrapper::before {
+    width: 100px;
+    height: 100px;
+  }
+  .app-screenshot-wrapper::after {
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+  }
+  .single-member .details .name, .github-widget .follow h2 {
+    font-size: 16px;
+  }
+  .single-member .image img {
+    width: 100px;
+  }
+  .single-member .social i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .single-member .details p {
+    font-size: 12px;
+  }
+  .single-member {
+    height: 380px;
+  }
+  .github-widget iframe {
+    width: 100%;
+  }
+  .github-widget iframe .github-btn-large .gh-btn, .github-widget iframe .github-btn-large .gh-count {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 586px) and (max-width: 768px) {
+  .hero-section {
+    background: #fff;
+    height: 460px;
+    overflow: hidden;
+  }
+  .hero-section .hero-text h1 {
+    font-size: 21px;
+  }
+  .btn-common {
+    font-size: 14px;
+  }
+  .hero-section::before {
+    position: absolute;
+    content: "";
+    width: 670px;
+    height: 900px;
+    top: -330px;
+    right: -300px;
+    left: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/hero-bg.png);
+    background-position: right;
+  }
+  .app-screenshot-wrapper::after {
+    width: 70px;
+    height: 70px;
+  }
+  .single-member .details .name {
+    font-size: 18px;
+  }
+  .single-member {
+    height: 450px;
+  }
+  .github-widget .follow h2 {
+    font-size: 24px;
   }
 }

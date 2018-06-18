@@ -1,4 +1,109 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) { 
+    .hero-section {
+        height: 500px;
+        overflow: hidden;
+        background: none;
+    }
+    .hero-section::before {
+        position: absolute;
+        content: "";
+        width: 800px;
+        height: 900px;
+        top: -330px;
+        right: -300px;
+        left: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../images/hero-bg.png);
+        background-position: right;
+    }
+    .hero-section .hero-text h1 {
+        font-size: 28px;
+    }
+    .single-about-widget h3 {
+        font-size: 16px;
+    }
+    .single-about-widget p {
+        font-size: 12px;
+    }
+    .app-screenshot-wrapper::before {
+        width: 100px;
+        height: 100px;
+    }
+    .app-screenshot-wrapper::after {
+        width: 80px;
+        height: 80px;
+        bottom: 0;
+    }
+    .single-member .details .name , .github-widget .follow h2 {
+        font-size: 16px;
+    }
+    .single-member .image img {
+        width: 100px;
+    }
+    .single-member .social i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .single-member .details p {
+        font-size: 12px;
+    }
+    .single-member {
+        height: 380px;
+    }
+    
+    .github-widget {
+        iframe {
+            width: 100%;
+            .github-btn-large .gh-btn, .github-btn-large .gh-count {
+                font-size: 14px;
+                
+            }
+        }
+    }
+}
 
+
+
+@media (min-width: 586px) and (max-width: 768px) {
+    .hero-section {
+        background: #fff;
+        height: 460px;
+        overflow: hidden;
+    }
+    .hero-section .hero-text h1 {
+        font-size: 21px;
+    }
+    .btn-common {
+        font-size: 14px;
+    }
+    .hero-section::before {
+        position: absolute;
+        content: "";
+        width: 670px;
+        height: 900px;
+        top: -330px;
+        right: -300px;
+        left: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../images/hero-bg.png);
+        background-position: right;
+    }
+    .app-screenshot-wrapper::after {
+        width: 70px;
+        height: 70px;
+    }
+    .single-member .details .name {
+        font-size: 18px;
+    }
+    .single-member {
+        height: 450px;
+    }
+    .github-widget .follow h2 {
+        font-size: 24px;
+    }
 }
