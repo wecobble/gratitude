@@ -101,9 +101,16 @@
     }
     .github-widget {
         .follow {
-            
+            text-align: left;
             h2 {
                 font-size: 28px;
+            }
+        }
+    }
+    .footer-section {
+        .footer-text {
+            p {
+                font-size: 14px;
             }
         }
     }
