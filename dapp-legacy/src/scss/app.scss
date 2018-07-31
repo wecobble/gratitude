@@ -6,8 +6,8 @@
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/type";
 @import "~bootstrap/scss/images";
-@import "~bootstrap/scss/code";
 @import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/code";
 @import "~bootstrap/scss/grid";
 
 // importing font-awesome
@@ -16,5 +16,12 @@
 @import './../fontawesome/scss/fa-brands';
 @import './../fontawesome/scss/fontawesome.scss';
 
-// Base Style
-@import 'style.scss';
+// Style CSS
+@import 'partials/style';
+
+// Responsive
+
+// Desktop
+@import 'partials/desktop';
+// Tablet
+@import 'partials/tablet';
