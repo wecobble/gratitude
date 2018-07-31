@@ -1,0 +1,71 @@
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .header-section .logo a {
+        font-size: 28px;
+    }
+    .header-section .quick-link a {
+        font-size: 18px;
+    }
+    .hero-section {
+        height: 100vh;
+    }
+    .hero-section .hero-text .hero-title {
+        font-size: 42px;
+    }
+    
+    .hero-section .hero-input-box-wrapper form.hero-form input {
+        padding: 35px 20px;
+        font-size: 28px;
+        font-weight: 300;
+    }
+    .hero-section .hero-input-box-wrapper form.hero-form input::placeholder {
+        font-size: 28px;
+    }
+    .hero-section .hero-input-box-wrapper .submit-wrapper {
+        padding: 15px 20px;
+    }
+    .hero-section .hero-input-box-wrapper .submit-wrapper p {
+        font-size: 14px;
+    }
+    .hero-section .hero-input-box-wrapper .submit-wrapper .btn-common {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+    .top-entries-section {
+        padding: 120px 0;
+    }
+    .section-title {
+        font-size: 38px;
+    }
+    .section-title::before {
+        top: 56px;
+        width: 170px;
+    }
+    .section-title::after {
+        width: 88px;
+        top: 64px;
+    }
+    .top-entry-wrapper {
+        margin-top: 100px;
+    }
+    .single-entry .quote p {
+        font-size: 18px;
+    }
+    .single-entry .quote {
+        padding: 25px;
+    }
+    .single-entry .transection-hash {
+        padding-top: 15px;
+    }
+    .single-entry .transection-hash p {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: right;
+    }
+    footer.footer-section p {
+        margin: 0;
+    }
+    .socail-icons {
+        text-align: right;
+    }
+}
