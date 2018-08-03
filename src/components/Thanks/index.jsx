@@ -37,3 +37,4 @@ class Thanks extends React.Component {
     );
   }
 }
+export default Thanks;
