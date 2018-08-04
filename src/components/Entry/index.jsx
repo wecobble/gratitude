@@ -263,21 +263,15 @@ class Entry extends React.Component {
                   <h1 className="hero-title">What are you thankful for today?</h1>
                   <div className="hero-input-box-wrapper">
                     <div className="input-form">
-
-                      <form onSubmit={this.invokeSendMessage} className="hero-form">
-
+                      <form className="hero-form">
                         <input type="text" value={this.state.message} onChange={this.handleChange} placeholder="I proposed. She said Yes!" />
-
-
                         <div className="submit-wrapper">
                           <p>Deliver your message for only a drop of GAS</p>
-                          <button type="reload" value="Reload messages" className="btn-common" onClick={this.fetchAllMessage}>Reload messages</button>
-                          <button type="submit" value="Submit" className="btn-common">Send</button>
+                          <button type="reload" value="Reload" className="btn-common" onClick={this.fetchAllMessage}>Reload</button>
+                          <button type="submit" value="Submit" className="btn-common" onSubmit={this.invokeSendMessage}>Send</button>
                         </div>
                       </form>
                     </div>
-
-
                   </div>
                 </div>
               </div>
