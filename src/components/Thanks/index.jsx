@@ -5,15 +5,6 @@ class Thanks extends React.Component {
     return (
 
       <React.Fragment>
-        <section className="top-entries-section">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <h1 className="section-title">Todays top entries:</h1>
-              </div>
-            </div>
-
-            <div className="row top-entry-wrapper">
               <div className="col-md-6">
                 <div className="single-entry">
                   <div className="time">
@@ -29,9 +20,6 @@ class Thanks extends React.Component {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
       </React.Fragment>
 
     );
