@@ -38,6 +38,7 @@ class Entry extends React.Component {
         userAddress: address
       });
     });
+    this.fetchAllMessage();
   }
 
   toggleChildMenu(msgD,timeD,addrD) {
