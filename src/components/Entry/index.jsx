@@ -284,15 +284,21 @@ class Entry extends React.Component {
             </div>
           </div>
         </section>
-        <button
-          onClick={() => this.fetchAllMessage()}
-        >
-          Load All Message
-        </button>
-        {this.state.thanks.map((thanks, index) => {
+        
+        <section className="top-entries-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h1 className="section-title">Todays top entries:</h1>
+              </div>
+            </div>
+            <div className="row top-entry-wrapper">
+            {this.state.thanks.map((thanks, index) => {
                   return (<Thanks key= {thanks.hash} hash={thanks.hash} message={thanks.message} date={thanks.date}/>);
                 })}
-
+            </div>
+          </div>
+        </section>
       </React.Fragment>
     );
   }
