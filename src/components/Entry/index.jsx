@@ -267,8 +267,8 @@ class Entry extends React.Component {
                         <input type="text" value={this.state.message} onChange={this.handleChange} placeholder="I proposed. She said Yes!" />
                         <div className="submit-wrapper">
                           <p>Deliver your message for only a drop of GAS</p>
-                          <button type="reload" value="Reload" className="btn-common" onClick={this.fetchAllMessage}>Reload</button>
-                          <button type="submit" value="Submit" className="btn-common" onSubmit={this.invokeSendMessage}>Send</button>
+                          <button type="button" value="Reload" className="btn-common" onClick={this.fetchAllMessage}>Reload</button>
+                          <button type="button" value="Submit" className="btn-common" onSubmit={this.invokeSendMessage}>Send</button>
                         </div>
                       </form>
                     </div>
