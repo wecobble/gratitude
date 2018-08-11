@@ -8651,3 +8651,9 @@ a:hover {
     font-size: 24px;
   }
 }
+
+@media (min-width: 430px) and (max-width: 575px) {
+  .hero-text {
+    margin-top: 120px;
+  }
+}
